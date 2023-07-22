@@ -1,2 +1,721 @@
-asdsddfd
-hiiiiiiiiiiii
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ init
+bash: init: command not found
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git init
+Initialized empty Git repository in C:/Users/Mahavir/Desktop/pratik/.git/
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git config --global user.name jayeshmali1234
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git config --global user.email jayeshmali684@gmail.com
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git config --global user.name
+jayeshmali1234
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ ls
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ vi jay
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ sh jay
+jay shri ram
+hello jayesh
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ cat > prash
+hii pratik
+how are you
+
+[1]+  Stopped                 cat > prash
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ touch bola
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ ls
+bola  jay  prash
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bola
+        jay
+        prash
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git add .
+warning: in the working copy of 'jay', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'prash', LF will be replaced by CRLF the next time Git touches it
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   bola
+        new file:   jay
+        new file:   prash
+
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git commit -m "first files"
+[master (root-commit) 74bfffe] first files
+ 3 files changed, 4 insertions(+)
+ create mode 100644 bola
+ create mode 100644 jay
+ create mode 100644 prash
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git log
+commit 74bfffefdbc65d53443fcbac5f0d2c824c1ef318 (HEAD -> master)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 21:47:19 2023 +0530
+
+    first files
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git log --stat
+commit 74bfffefdbc65d53443fcbac5f0d2c824c1ef318 (HEAD -> master)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 21:47:19 2023 +0530
+
+    first files
+
+ bola  | 0
+ jay   | 2 ++
+ prash | 2 ++
+ 3 files changed, 4 insertions(+)
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git branch -m pappu
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (pappu)
+$ git branch
+* pappu
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (pappu)
+$ git branch master
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (pappu)
+$ git checkout master
+Switched to branch 'master'
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ ls
+bola  jay  prash
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git checkout pappu
+Switched to branch 'pappu'
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (pappu)
+$ ls
+bola  jay  prash
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (pappu)
+$ git branch
+  master
+* pappu
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (pappu)
+$ git checkout master
+Switched to branch 'master'
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git log
+commit 74bfffefdbc65d53443fcbac5f0d2c824c1ef318 (HEAD -> master, pappu)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 21:47:19 2023 +0530
+
+    first files
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ cat > bola
+hello bola bhai
+
+[3]+  Stopped                 cat > bola
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git commit -m "second changes"
+On branch master
+nothing to commit, working tree clean
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git add .
+warning: in the working copy of 'bola', LF will be replaced by CRLF the next time Git touches it
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   bola
+
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git commit -m "second changes"
+[master bc77e74] second changes
+ 1 file changed, 1 insertion(+)
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git log
+commit bc77e7485614b9535f931610a26cd0cc6a5f4a6c (HEAD -> master)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 22:01:45 2023 +0530
+
+    second changes
+
+commit 74bfffefdbc65d53443fcbac5f0d2c824c1ef318 (pappu)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 21:47:19 2023 +0530
+
+    first files
+
+Date:   Thu Jul 20 21:47:19 2023 +0530
+
+    first files
+
+ bola  | 0
+ jay   | 2 ++
+ prash | 2 ++
+ 3 files changed, 4 insertions(+)
+    --recursive[=<pathspec>]
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git clone https://github.com/jayeshmali1234/pradip
+Cloning into 'pradip'...
+warning: You appear to have cloned an empty repository.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ cd pradip
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik/pradip (main)
+$ cd ..
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ ls
+bola  jay  pradip/  prash
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pradip/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git add bola
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git add jay
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git checkout
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git branch main
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (master)
+$ git checkout main
+Switched to branch 'main'
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git remote add origin git@github.com:jayeshmali1234/pradip.git
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (8/8), 622 bytes | 124.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:jayeshmali1234/pradip.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git remote add origin git@github.com:jayeshmali1234/pradip.git
+error: remote origin already exists.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ cd pradip
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik/pradip (main)
+$ ls
+add
+
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik/pradip (main)
+$ git log
+commit 6084163f82c31aa49b872f88b1fe532eb19e1e77 (HEAD -> main)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 22:15:52 2023 +0530
+
+    second
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik/pradip (main)
+$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik/pradip (main)
+$ git checkout
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik/pradip (main)
+$ git log --stat
+commit 6084163f82c31aa49b872f88b1fe532eb19e1e77 (HEAD -> main)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 22:15:52 2023 +0530
+
+    second
+
+ add | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik/pradip (main)
+$ cd ..
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ ls
+bola  jay  pradip/  prash
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ cat >> f1
+hello
+
+[4]+  Stopped                 cat >> f1
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ cat f1
+hello
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git add f1
+warning: in the working copy of 'f1', LF will be replaced by CRLF the next time Git touches it
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git diff
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ cat >> f1
+jayesh
+
+[5]+  Stopped                 cat >> f1
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git diff
+warning: in the working copy of 'f1', LF will be replaced by CRLF the next time Git touches it
+diff --git a/f1 b/f1
+index ce01362..8fa69e6 100644
+--- a/f1
++++ b/f1
+@@ -1 +1,2 @@
+ hello
++jayesh
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   f1
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pradip/
+
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git add f1
+warning: in the working copy of 'f1', LF will be replaced by CRLF the next time Git touches it
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   f1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pradip/
+
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git commit -m "added"
+[main ec94397] added
+ 1 file changed, 2 insertions(+)
+ create mode 100644 f1
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git log
+commit ec9439779b6bfd130cc86668ad7270b9edc9a3a7 (HEAD -> main)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 22:37:39 2023 +0530
+
+    added
+
+commit bc77e7485614b9535f931610a26cd0cc6a5f4a6c (origin/main, master)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 22:01:45 2023 +0530
+
+    second changes
+
+commit 74bfffefdbc65d53443fcbac5f0d2c824c1ef318 (pappu)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 21:47:19 2023 +0530
+
+    first files
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git push origin -u main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 329 bytes | 164.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:jayeshmali1234/pradip.git
+   bc77e74..ec94397  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ cat f1
+hello
+jayesh
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ cat >>f1
+khumesh
+
+[6]+  Stopped                 cat >> f1
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git add f1
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git add -A
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git commit -m "third change"
+[main 2f822ff] third change
+ 1 file changed, 1 insertion(+)
+ create mode 160000 pradip
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git push origin -u main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 257 bytes | 128.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:jayeshmali1234/pradip.git
+   ec94397..2f822ff  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git diff f1
+warning: in the working copy of 'f1', LF will be replaced by CRLF the next time Git touches it
+diff --git a/f1 b/f1
+index 8fa69e6..fa8c171 100644
+--- a/f1
++++ b/f1
+@@ -1,2 +1,3 @@
+ hello
+ jayesh
++khumesh
+
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git add f1
+warning: in the working copy of 'f1', LF will be replaced by CRLF the next time Git touches it
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   f1
+
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git commit -m "hee"
+[main 593122e] hee
+ 1 file changed, 1 insertion(+)
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git push origin -u main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 269 bytes | 134.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:jayeshmali1234/pradip.git
+   2f822ff..593122e  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ ls
+bola  f1  jay  pradip/  prash
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git branch jayesh
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git checkout
+Your branch is up to date with 'origin/main'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git checkout jayesh
+Switched to branch 'jayesh'
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ ls
+bola  f1  jay  pradip/  prash
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ git push origin -u main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ git push origin -f main
+Everything up-to-date
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git push origin -f main
+Everything up-to-date
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git checkout jayesh
+Switched to branch 'jayesh'
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ git push origin -f jayesh
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'jayesh' on GitHub by visiting:
+remote:      https://github.com/jayeshmali1234/pradip/pull/new/jayesh
+remote:
+To github.com:jayeshmali1234/pradip.git
+ * [new branch]      jayesh -> jayesh
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ git branch mali
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ git checkout mali
+Switched to branch 'mali'
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git push origin -f mali
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'mali' on GitHub by visiting:
+remote:      https://github.com/jayeshmali1234/pradip/pull/new/mali
+remote:
+To github.com:jayeshmali1234/pradip.git
+ * [new branch]      mali -> mali
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ vi hh
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git add hh
+warning: in the working copy of 'hh', LF will be replaced by CRLF the next time Git touches it
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git commit -m "hee"
+[mali 60b0198] hee
+ 1 file changed, 3 insertions(+)
+ create mode 100644 hh
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git status
+On branch mali
+nothing to commit, working tree clean
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git log
+commit 60b01986c6c25fc9d38d4654c6679f23bc7bbdd3 (HEAD -> mali)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 22:56:10 2023 +0530
+
+    hee
+
+commit 593122ec2fd3854ccf947d5a5f1d118e9a4b7bb6 (origin/mali, origin/main, origin/jayesh, main, jayesh)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 22:43:41 2023 +0530
+
+    hee
+
+commit 2f822ff78664c038d69581544a92c15035359383
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 22:41:31 2023 +0530
+
+    third change
+
+commit ec9439779b6bfd130cc86668ad7270b9edc9a3a7
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 22:37:39 2023 +0530
+
+    added
+
+commit bc77e7485614b9535f931610a26cd0cc6a5f4a6c (master)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+Date:   Thu Jul 20 22:01:45 2023 +0530
+
+    second changes
+
+commit 74bfffefdbc65d53443fcbac5f0d2c824c1ef318 (pappu)
+Author: jayeshmali1234 <jayeshmali684@gmail.com>
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git status
+On branch mali
+nothing to commit, working tree clean
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git push origin -u mali
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 266 bytes | 133.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:jayeshmali1234/pradip.git
+   593122e..60b0198  mali -> mali
+branch 'mali' set up to track 'origin/mali'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git merge jayesh
+Already up to date.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git push origin -u mali
+Everything up-to-date
+branch 'mali' set up to track 'origin/mali'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git push origin -f mali
+Everything up-to-date
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (mali)
+$ git checkout jayesh
+Switched to branch 'jayesh'
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ git push origin -f jayesh
+Everything up-to-date
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ git merge mali
+Updating 593122e..60b0198
+Fast-forward
+ hh | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 hh
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ git push origin -u jayesh
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:jayeshmali1234/pradip.git
+   593122e..60b0198  jayesh -> jayesh
+branch 'jayesh' set up to track 'origin/jayesh'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (jayesh)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git merge mali
+Updating 593122e..60b0198
+Fast-forward
+ hh | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 hh
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$ git push origin -f main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:jayeshmali1234/pradip.git
+   593122e..60b0198  main -> main
+
+Mahavir@DESKTOP-7ME2OCE MINGW64 ~/Desktop/pratik (main)
+$
